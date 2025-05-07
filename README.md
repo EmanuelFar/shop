@@ -69,12 +69,15 @@ npm run server
 # Terminal 2
 npm run frontend
 ```
-project
+
+## Project Structure
+```bash
     shop/ # Angular frontend
-      src/ # Source code
+        src/ # Source code
     server/ # Node.js backend
-      routes/ # API routes
-      models/ # Database models
+        routes/ # API routes
+        models/ # Database models
     tests/ # End-to-end tests
     package.json # Root package.json for running all commands
-## Project Structure
+```
+
