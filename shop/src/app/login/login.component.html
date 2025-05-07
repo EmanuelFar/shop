@@ -1,0 +1,46 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>Sign in</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <div class="input-icon-group">
+          <i class="fas fa-user"></i>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            [(ngModel)]="email" 
+            required 
+            placeholder="Enter your email"
+          >
+        </div>
+      </div>
+     
+      
+      <div class="form-group">
+        <div class="input-icon-group">
+          <i class="fas fa-lock"></i>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            [(ngModel)]="password" 
+            required 
+            placeholder="Enter your password"
+          >
+        </div>
+      </div>
+
+      <button type="submit" class="login-button">Sign in</button>
+      
+      <div *ngIf="errorMsg" class="error-message">
+        {{ errorMsg }}
+      </div>
+
+      <div class="register-link">
+        Don't have an account? 
+        <a routerLink="/register">Register</a>
+      </div>
+    </form>
+  </div>
+</div>

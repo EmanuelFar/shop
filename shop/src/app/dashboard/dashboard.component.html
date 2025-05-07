@@ -1,0 +1,23 @@
+<div class="dashboard-header">
+  <div class="header-left">
+    <button class="icon-btn" title="Shop" (click)="goTo('/shop')">
+      <i class="fas fa-store"></i>
+    </button>
+    <button class="icon-btn" title="Cart" (click)="goTo('/cart')">
+      <i class="fas fa-shopping-cart"></i>
+    </button>
+  </div>
+  <div class="header-right">
+    <div class="user-avatar">
+      {{ userName[0].toUpperCase() }}
+    </div>
+    <span class="user-name" tabindex="0" (click)="toggleMenu()" >
+      {{ userName }}
+      <i class="fas fa-caret-down"></i>
+    </span>
+    <div class="dropdown-menu" *ngIf="showMenu">
+      <button class="dropdown-item" (click)="logout()" >Log out</button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

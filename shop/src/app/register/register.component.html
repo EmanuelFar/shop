@@ -1,0 +1,61 @@
+<div class="register-container">
+  <div class="register-card">
+    <h2>Register</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <div class="input-icon-group">
+          <i class="fas fa-user"></i>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            [(ngModel)]="email" 
+            required 
+            placeholder="Enter your email"
+          >
+        </div>
+      </div>
+     
+      
+      <div class="form-group">
+        <div class="input-icon-group">
+          <i class="fas fa-lock"></i>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            [(ngModel)]="password" 
+            required 
+            placeholder="Enter your password"
+          >
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <div class="input-icon-group">
+          <i class="fas fa-lock"></i>
+          <input 
+            type="password" 
+            id="confirmPassword" 
+            name="confirmPassword" 
+            [(ngModel)]="confirmPassword" 
+            required 
+            placeholder="Confirm your password"
+          >
+        </div>
+      </div>
+
+      <button type="submit" class="register-button">Register</button>
+      
+      <div *ngIf="errorMsg" class="error-message">
+        {{ errorMsg }}
+      </div>
+
+      <div class="login-link">
+        Already have an account? 
+        <a routerLink="/login">Sign in</a>
+      </div>
+    </form>
+  </div>
+</div>

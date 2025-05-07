@@ -1,0 +1,12 @@
+<div class="item-card">
+    <img [src]="item.imageUrl" [alt]="item.name" class="item-image" />
+    <div class="item-info">
+        <h3 class="item-name">{{ item.name }}</h3>
+        <p class="item-description">{{ item.description }}</p>
+        <p class="item-price">${{ item.price }}</p>
+        <button class="item-button" (click)="addToCart()">Add to Cart</button>
+        <div *ngIf="buttonMessage" class="button-message">
+            {{ buttonMessage }}
+        </div>
+    </div>
+</div>

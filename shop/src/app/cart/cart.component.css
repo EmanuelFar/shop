@@ -1,0 +1,122 @@
+.cart-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.cart-container h2 {
+  text-align: center;
+  color: #ff7e5f;
+  margin-bottom: 2rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 1.5rem 0;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+.cart-item h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+/* name of the item */
+.cart-item p {
+  margin: 0.2rem 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* price of the item */
+.cart-item p:last-child {
+  font-weight: bold;
+  color: #ff7e5f;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  border: 1px solid #ef9a9a;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+  font-style: italic;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.delete-cart-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+.delete-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #ff0000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid #eee;
+}
+
+.cart-total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff7e5f;
+  text-align: right;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}

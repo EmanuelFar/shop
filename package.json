@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test npx playwright test",
+    "server": "node server/server.js",
+    "frontend": "cd shop && ng serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.14",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.14.1"
+  }
+}
